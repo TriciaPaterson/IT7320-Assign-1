@@ -14,9 +14,15 @@ public class MainEvent {
 		
 		String eventHeadline = eventObj.nextLine();
 		
+		System.out.println("Enter location of event: ");
+		
+		String location = eventObj.nextLine();
+		
 		Event e = new Event(); 
 		
 		e.print(eventName, eventHeadline);
+		
+		e.dispatch(location);
 		
 		
 
