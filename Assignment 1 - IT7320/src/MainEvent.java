@@ -18,11 +18,17 @@ public class MainEvent {
 		
 		String location = eventObj.nextLine();
 		
+		System.out.println("When did this event take place? ");
+		
+		String eventTime = eventObj.nextLine();
+		
 		Event e = new Event(); 
 		
 		e.print(eventName, eventHeadline);
 		
 		e.dispatch(location);
+		
+		e.time(eventTime);
 		
 		
 

@@ -3,11 +3,16 @@ public class Event {
 
 	public void print(String eventName, String eventHeadline)
 	{
-		System.out.println(eventName + "\t" + eventHeadline );
+		System.out.println("The Event Type is: " + eventName + "\n" + "The Event Description is: " + eventHeadline );
 	}
 	
 	public void dispatch(String location)
 	{
 		System.out.println("Units have been dispatched to " + location);
+	}
+	
+	public void time(String eventTime)
+	{
+		System.out.println("The event happened at: " + eventTime);
 	}
 }
